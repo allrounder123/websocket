@@ -1,0 +1,84 @@
+🌐 WebSocket Communication Patterns
+
+🔑 Main Feature
+The most important feature of WebSockets is:
+✅ Continuous communication
+✅ Two-way communication (bidirectional)
+
+This means:
+The client can send data to the server.
+The server can also send data to the client.
+Both can send messages anytime.
+No interruption.
+No need to refresh.
+
+📈 Example: Stock Tracking App
+Imagine a stock price app.
+
+With HTTP:
+You must refresh to see new prices.
+
+With WebSockets:
+The server keeps sending updated stock prices automatically.
+You don’t need to request again.
+Prices update in real time.
+
+📡 Broadcasting (Very Important Concept)
+WebSockets also allow something called:
+
+📢 Broadcasting
+Broadcasting means:
+👉 The server sends the same message to many clients at the same time.
+
+💬 Example: Chatroom Application
+
+Let’s understand step by step:
+One user sends a message to the server.
+The server receives it.
+The server sends that message to other connected users.
+That is broadcasting.
+
+🏠 Smaller Chat Rooms
+Sometimes apps have different chat rooms.
+
+In that case:
+The server checks which room the sender is in.
+It sends (broadcasts) the message only to users in that same room.
+Not everyone gets the message.
+
+So broadcasting can be:
+To all users
+Or to a selected group of users
+
+📌 Three Communication Patterns in WebSockets
+WebSockets support three main communication types:
+
+1️⃣ Client ➝ Server
+
+The client sends data to the server.
+Example: Sending a chat message.
+
+2️⃣ Server ➝ Client
+
+The server sends data to one client.
+Example: Sending updated stock price to one user.
+
+3️⃣ Server ➝ Many Clients (Broadcasting)
+
+The server sends the same data to many clients at once.
+Example: Sending one user’s message to all other users in a chatroom.
+
+🔥 Final Simple Summary
+
+WebSockets allow:
+Continuous connection
+Two-way communication
+Real-time updates
+Broadcasting to multiple users
+
+This makes them perfect for:
+Chat apps
+Live stock apps
+Multiplayer games
+
+Live notifications
